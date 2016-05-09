@@ -4,6 +4,8 @@ O projeto usb-wifi-ethernet-arduino é único para todas as comunicações supracita
 
 O projeto arduino-software-communication trata a parte do software em VB.NET para desktop. O projeto usb-wifi-ethernet-arduino trata a programação do arduino.
 
+![Alt text](/help/scheme.png?raw=true "Optional Title")
+
 #Objetivo:
 
 O usb-wifi-ethernet-arduino é um programa desenvolvido em C++ para ser implementado por qualquer usuário que utilize os tipos de arduino listados abaixo:
@@ -15,7 +17,7 @@ O usb-wifi-ethernet-arduino é um programa desenvolvido em C++ para ser implement
 #Como configurar?
 
 a) Arquivo Config.h
-#define TypeArduino 1 // Use 1 para USB, 2 para Ethernet ou 3 para WiFly
+define TypeArduino 1 // Use 1 para USB, 2 para Ethernet ou 3 para WiFly
 
 b) Arquivo Kernel.ino
 Altere a classe UsbDuino para UsbDuino, EtheDuino ou WifliDuino de acordo com o escolhido pelo item anterior.

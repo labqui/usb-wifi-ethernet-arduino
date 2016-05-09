@@ -1,6 +1,6 @@
 #include "Config.h";
 
-UsbDuino *_b;
+UsbDuino *_b; //Altere para UsbDuino, EtheDuino ou WifliDuino
 
 
 void setup() {
@@ -8,7 +8,7 @@ void setup() {
 	DEBUG("Available memory", FREE_RAM);
 	_b = new UsbDuino();
 	_b->init();
-	//_b->addSSID("SSID", "PASS"); //ONLY TO Wifly
+	//_b->addSSID("SSID", "PASS"); //ONLY TO WifliDuino
 	_b->Connect();
 }
 

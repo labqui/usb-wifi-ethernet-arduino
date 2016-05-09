@@ -17,7 +17,10 @@ O usb-wifi-ethernet-arduino é um programa desenvolvido em C++ para ser implement
 #Como configurar?
 
 a) Arquivo Config.h
-define TypeArduino 1 // Use 1 para USB, 2 para Ethernet ou 3 para WiFly
+
+```c
+#define TypeArduino 1 // Use 1 para USB, 2 para Ethernet ou 3 para WiFly
+```
 
 b) Arquivo Kernel.ino
 Altere a classe UsbDuino para UsbDuino, EtheDuino ou WifliDuino de acordo com o escolhido pelo item anterior.
@@ -36,7 +39,7 @@ Obs.: A letra E é reservada para leitura do arduino pelo software desktop bem co
 
 Se quisermos que o led acoplado a porta 13 do arduino seja aceso ou apagado por comando de um software, devemos configurar da seguinte forma:
 Quando eu enviar A ele irá ligar, quando enviar B ele irá apagar.
-
+```c
 bool Customer::execStream(int _class, char _p[]) {
 	if (_class == 65) {
 
@@ -52,6 +55,6 @@ bool Customer::execStream(int _class, char _p[]) {
 	}
 	return true;
 }
-
+```
 
 

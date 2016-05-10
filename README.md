@@ -24,14 +24,14 @@ O usb-wifi-ethernet-arduino é um programa desenvolvido em C++ para ser implement
 
 a) Arquivo Config.h
 
-```c
+```c++
 #define TypeArduino 1 // Use 1 para USB, 2 para Ethernet ou 3 para WiFly
 ```
 
 b) Arquivo Kernel.ino
 Altere a classe UsbDuino para UsbDuino, EtheDuino ou WifliDuino de acordo com o escolhido pelo item anterior.
 
-```c
+```c++
 UsbDuino *_b; //Altere para UsbDuino, EtheDuino ou WifliDuino
 
 void setup() {
@@ -54,7 +54,10 @@ Feito isso, a programação do arduino para a comunicação está funcionando.
 As configurações são realizadas dentro do arquivo Customer.cpp.
 O método init deve conter as configurações usualmente inseridas no ```Setup()```. 
 
-Exemplo: ``` pinMode(13, OUTPUT); //PARA PISCAR O LED A PARTIR DE UMA INSTRUÇÃO DE UM COMPUTADOR ```
+Exemplo: 
+```c++
+pinMode(13, OUTPUT); //PARA PISCAR O LED A PARTIR DE UMA INSTRUÇÃO DE UM COMPUTADOR
+```
 
 O método ```execStream``` é chamado sempre que uma ordem for dada ao arduino.
 

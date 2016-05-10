@@ -2,7 +2,7 @@
 Unificar um código de comunicação entre o arduino e o computador. Atualmente, as principais interface de comunicação é a (1) USB, a (2) Ethernet e, similarmente a esta última, a de (3) Wireless.
 O projeto usb-wifi-ethernet-arduino é único para todas as comunicações supracitadas, porém precisa ser configurado pelo arquivo Config.h de acordo com o método de comunicação utilizado.
 
-O projeto arduino-software-communication trata a parte do software em VB.NET para desktop. Por outro lado, o projeto [usb-wifi-ethernet-arduino](https://github.com/labqui/usb-wifi-ethernet-arduino) a programação do arduino.
+O projeto [arduino-software-communication](https://github.com/labqui/arduino-software-communication) trata a parte do software em VB.NET para desktop. Por outro lado, o projeto [usb-wifi-ethernet-arduino](https://github.com/labqui/usb-wifi-ethernet-arduino) a programação do arduino.
 
 ![Alt text](/help/scheme.png?raw=true "Optional Title")
 

@@ -51,21 +51,21 @@ Feito isso, a programação do arduino para a comunicação está funcionando.
 As configurações são realizadas dentro do arquivo Customer.cpp.
 O método init deve conter as configurações usualmente inseridas no ```Setup()```. 
 
-Exemplo: ```c pinMode(13, OUTPUT); //PARA PISCAR O LED A PARTIR DE UMA INSTRUÇÃO DE UM COMPUTADOR ```
+Exemplo: ``` pinMode(13, OUTPUT); //PARA PISCAR O LED A PARTIR DE UMA INSTRUÇÃO DE UM COMPUTADOR ```
 
 O método ```execStream``` é chamado sempre que uma ordem for dada ao arduino.
 
 
-Seguindo a numeração dos caracteres em ASCII ([lista completa](help/asciifull.gif), temos:
+Seguindo a numeração dos caracteres em ASCII ([lista completa](help/asciifull.gif)), temos:
 
-A = 65, B = 66, C = 67, e assim por diante. Cada letra representa um método que no arduino.
+A = 65, B = 66, C = 67, e assim por diante. Cada letra representa um método do arduino.
 
-Obs.: A letra E é reservada para leitura do arduino pelo software desktop bem como a letra R reinicia o arduino. Portanto, essas não devem ser usadas.
+Obs.: A letra E, no entanto, é reservada para leitura do arduino pelo software desktop bem como a letra R reinicia o arduino. Portanto, essas não devem ser usadas.
 
 Se quisermos que o led, acoplado a porta 13 de alguns arduinos, seja aceso ou apagado por comando de um software, devemos configurar esta aplicação da seguinte forma:
 
-Quando enviar o comando ```c A=1; ``` a função entrará na condição ```c if (_class == 65) ``` e passará ```c 100 ``` como parâmetro. Por outro lado, quando enviarmos ```c A=0; ``` ele irá apagar o led.
-```c
+Quando enviar o comando ```A=1; ``` a função entrará na condição ```if (_class == 65) ``` e passará ```100 ``` como parâmetro. Por outro lado, quando enviarmos ```A=0; ``` ele irá apagar o led.
+```c++
 bool Customer::execStream(int _class, char _p[]) {
 	if (_class == 65) {
 		digitalWrite(13, atoi(_p)); //liga o led do arduino

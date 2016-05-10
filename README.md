@@ -4,7 +4,10 @@ O projeto usb-wifi-ethernet-arduino é único para todas as comunicações supracita
 
 O projeto [arduino-software-communication](https://github.com/labqui/arduino-software-communication) trata a parte do software em VB.NET para desktop. Por outro lado, o projeto [usb-wifi-ethernet-arduino](https://github.com/labqui/usb-wifi-ethernet-arduino) a programação do arduino.
 
+* Atenção: é recomendável o uso da IDE Visual Studio v15.
+***
 ![Alt text](/help/scheme.png?raw=true "Optional Title")
+
 
 #Objetivo:
 
@@ -77,5 +80,6 @@ bool Customer::execStream(int _class, char _p[]) {
 	return true;
 }
 ```
-
+#Como configurar o software?
+O software irá enviar informações para o arduino. Ele pode ser implementado seguindo o projeto básico desenvolvido em VB.NET no link [[arduino-software-communication](https://github.com/labqui/arduino-software-communication)].
 

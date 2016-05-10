@@ -11,8 +11,8 @@ O projeto arduino-software-communication trata a parte do software em VB.NET par
 O usb-wifi-ethernet-arduino é um programa desenvolvido em C++ para ser implementado por qualquer usuário que utilize os tipos de arduino listados abaixo:
 
 | Tipo de Arduino | Código no Projeto |
-| Arduino qualquer com interface USB | 1 |
 | ------------- |:-------------:|
+| Arduino qualquer com interface USB | 1 |
 | Arduino Ethernet      | 2 |
 | Arduino com o shield Wireless [sparkfun/WiFly-Shield](https://github.com/sparkfun/WiFly-Shield)      | 3 |
 
